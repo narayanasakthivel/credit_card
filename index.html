@@ -1,0 +1,138 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  displays site properly based on user's device
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  Feel free to remove these styles or customise in your own stylesheet 👍
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm
+
+   Completed state start
+
+  Thank you!
+  We've added your card details
+  Continue
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="table">
+      <div class="containscard">
+      <div class="card">
+         <div class="show">
+             <img src="images/bg-card-front.png">
+             <div class="inside-front">
+              <div class="circle">
+                   <img src="images/card-logo.svg">
+              </div>
+              <div class="idnumber">
+                   <p>0000 0000 0000 0000</p>
+              </div>
+              <div class="user-details">
+                <p class="user-name">NAME</p>
+                <p class="user-date">00/00</p>
+           </div>
+             </div>
+         </div>
+         <div class="cv">
+             <img src="images/bg-card-back.png">
+             <div class="three">
+              <p  class="three2">000</p>
+             </div>
+         </div>
+      </div>
+    </div>
+      <div class="details">
+           <form>
+             <div class="data">
+             <label for="name">Cardholder Name</label>
+             <input id="name" class="name" placeholder="e.g. Jane Appleseed" maxlength="30">
+             <span class="name-error">Error</span>
+             </div>
+             <div class="data">
+              <label for="cardnumber">Card Number</label>
+              <input id="cardnumber" class="cardnumber" placeholder="e.g. 1234 5678 9123 0000" maxlength="16">
+              <span class="number-error">Error</span>
+             </div>
+             <div class="data1">
+              <div class="date">
+              <label for="dated">Exp. Date (MM/YY)</label>
+              <div class="valuesfordate">
+              <input id="dated" class="dated"  placeholder="dd" maxlength="2" >
+              <input id="date2" class="date2"  placeholder="yy" maxlength="2">
+             </div>
+              <span class="date-error">Error</span>
+              </div>
+              <div class="cvv">
+                <label >CVC</label>
+                <input id="cvc" class="cvc" onkeyup="cvvalter()" placeholder="e.g. 123" maxlength="3">
+                <span class="cvv-error">Error</span>
+              </div>
+             </div>
+             <div class="thanks">
+              <div class="circle1">
+              <img src="images/icon-complete.svg">
+            </div>
+              <div class="completion">
+                <p>Thank You</p>
+              </div>
+              <div class="finish">
+                <p>We've added your card details</p>
+              </div>
+              <button class="end2">
+                Continue
+               </button>
+             </div>
+             <button type="button" class="end" onclick="validateshow()">
+              Confirm
+             </button>
+           </form>
+      </div>
+
+  </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>
